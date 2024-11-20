@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: RabbitMQMessagingDemo
+  rabbitmq:
+    password: password
+    username: user
+
+queue:
+  queue1:
+    name: queue1
+  queue2:
+    name: queue2
+
+exchange:
+  name: myExchange
+
+routing:
+  key: foo.bar.#
+
+message:
+  queue:
+    name: my-queue
+  topic:
+    exchange:
+      name: my-exchange
+  binding:
+    key: my-key
